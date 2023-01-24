@@ -11,7 +11,9 @@ firefoxpath= os.path.join(script_dir, "drivers/geckodriver")
 class PythonSelenium(unittest.TestCase) :
     def setUp(self):
 
-    def a_rellenar(self):
+    def test_status(self):
+
+    def test_buscador(self):    
 
     def tearDown(self):
 
