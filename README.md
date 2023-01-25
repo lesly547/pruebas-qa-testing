@@ -14,8 +14,8 @@ This repository contains the folder where to place the drivers. If you already h
 
 
   * Chromedriver 
- [Here](https://chromedriver.chromium.org/downloads). 
+ [Here](https://chromedriver.chromium.org/downloads)
 
   * Geckodriver
 
-> [Here](https://github.com/mozilla/geckodriver/releases. 
+> [Here](https://github.com/mozilla/geckodriver/releases)
