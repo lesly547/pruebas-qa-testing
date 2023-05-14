@@ -13,6 +13,9 @@ firefoxpath = os.path.join(script_dir, "drivers/geckodriver")
 driver = webdriver.Chrome(executable_path=chromepath)
 
 
+# driver = webdriver.Firefox(executable_path=firefoxpath)
+
+
 @given(u"open duckduckgo web")
 def open_duckduckgo_web(context):
     driver.get("https://duckduckgo.com/")
@@ -28,6 +31,7 @@ def user_searches_on_the_web(context, city):
 
 @then(u"enter to {city} - {value} result")
 def enter_to_result(context, city, value):
-    driver.find_element(By.XPATH, "//span[contains(text(),'" + city + " - " + value + ", la enciclopedia libre')]").click()
+    driver.find_element(By.XPATH,
+                        "//span[contains(text(),'" + city + " - " + value + ", la enciclopedia libre')]").click()
     time.sleep(2)
     driver.close()
